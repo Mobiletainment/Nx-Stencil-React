@@ -1571,6 +1571,11 @@
   dependencies:
     typescript "3.9.3"
 
+"@stencil/react-output-target@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@stencil/react-output-target/-/react-output-target-0.0.6.tgz#542ccf85f7c269d0c72f0ecf5c37326c1d969084"
+  integrity sha512-Z0d1+RLmyxi/SuwYeIt+bKPyAl8hvz971GixmfNL1Kr9NRV45fEg6pyAjU3VzpEQkcsExE2HER2ShRqWI0ubRw==
+
 "@stencil/sass@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@stencil/sass/-/sass-1.1.1.tgz#866e146557b2dba213ca5455b07d49a17d918a52"

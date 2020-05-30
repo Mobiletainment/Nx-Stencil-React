@@ -1,0 +1,19 @@
+{
+  "name": "ui-components",
+  "description": "Shared UI components. Built with Stencil. Use ui-components-react for React bindings",
+  "author": "David Pertiller",
+  "keywords": ["web components", "custom elements", "stencil", "ui", "components"],
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/lib1/lib1.js",
+  "files": [
+    "dist/"
+  ]
+}
