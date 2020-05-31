@@ -1,6 +1,7 @@
 {
   "name": "yourcompany",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "David Pertiller",
   "license": "MIT",
   "scripts": {
     "nx": "nx",

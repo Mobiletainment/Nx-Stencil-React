@@ -8,6 +8,6 @@ describe('frontend1', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to frontend1!');
+    getGreeting().contains('Welcome to React with full Stencil component integration!');
   });
 });

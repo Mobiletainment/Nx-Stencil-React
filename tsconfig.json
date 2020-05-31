@@ -1,6 +1,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "ui-components": ["libs/ui-components"],
+      "ui-components/loader": ["libs/ui-components/dist/loader/index.cjs.js"],
+      "ui-components-react": ["generated/ui-components-react/src/components.ts"]
+    },
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -13,13 +19,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "ui-components": ["libs/ui-components"],
-      "ui-components/loader": ["libs/ui-components/dist/loader/index.cjs.js"],
-      "ui-components-react": ["generated/ui-components-react/src/components.ts"]
-    }
+    "skipDefaultLibCheck": true
   },
   "exclude": ["node_modules", "tmp"]
 }

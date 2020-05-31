@@ -16,9 +16,9 @@ export namespace Components {
          */
         "last": string;
         /**
-          * The middle name
+          * The middle names
          */
-        "middle": string;
+        "middle": string[];
     }
 }
 declare global {
@@ -43,9 +43,13 @@ declare namespace LocalJSX {
          */
         "last"?: string;
         /**
-          * The middle name
+          * The middle names
          */
-        "middle"?: string;
+        "middle"?: string[];
+        /**
+          * A custom named click handler
+         */
+        "onNameClicked"?: (event: CustomEvent<string>) => void;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

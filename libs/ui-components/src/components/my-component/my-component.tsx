@@ -1,10 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Event, EventEmitter, h, Prop } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.scss',
-  shadow: true,
+  shadow: true
 })
 export class MyComponent {
   /**
@@ -13,20 +13,26 @@ export class MyComponent {
   @Prop() first: string;
 
   /**
-   * The middle name
+   * The middle names
    */
-  @Prop() middle: string;
+  @Prop() middle: string[];
 
   /**
    * The last name
    */
   @Prop() last: string;
 
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
-  }
+  /**
+   * A custom named click handler
+   */
+  @Event() nameClicked: EventEmitter<string>;
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    const fullText = this.getText();
+    return <div onClick={() => this.nameClicked.emit(fullText)}>Hello, World! I'm {fullText}</div>;
+  }
+
+  private getText(): string {
+    return format(this.first, this.middle?.join(' '), this.last);
   }
 }

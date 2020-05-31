@@ -13,6 +13,6 @@ describe('App', () => {
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
 
-    expect(getByText('Welcome to frontend1!')).toBeTruthy();
+    expect(getByText('Welcome to React with full Stencil component integration!')).toBeTruthy();
   });
 });

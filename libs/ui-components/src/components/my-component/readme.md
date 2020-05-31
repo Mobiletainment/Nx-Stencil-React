@@ -5,11 +5,18 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property | Attribute | Description      | Type       | Default     |
+| -------- | --------- | ---------------- | ---------- | ----------- |
+| `first`  | `first`   | The first name   | `string`   | `undefined` |
+| `last`   | `last`    | The last name    | `string`   | `undefined` |
+| `middle` | --        | The middle names | `string[]` | `undefined` |
+
+
+## Events
+
+| Event         | Description                  | Type                  |
+| ------------- | ---------------------------- | --------------------- |
+| `nameClicked` | A custom named click handler | `CustomEvent<string>` |
 
 
 ----------------------------------------------

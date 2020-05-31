@@ -1,22 +1,20 @@
 import React from 'react';
-
-import './app.scss';
-
-import { ReactComponent as Logo } from './logo.svg';
+// this import uses path mapping under the hood to retrieve the generated source code
 import { MyComponent } from 'ui-components-react';
 
 export const App = () => {
 
   return (
-    <div className="app">
-      <header className="flex">
-        <Logo width="75" height="75" />
-        <h1>Welcome to frontend1!</h1>
-      </header>
-      <main>
-        <MyComponent/>
-      </main>
-    </div>
+    <>
+      <h1>Welcome to React with full Stencil component integration!</h1>,
+      <MyComponent first="a Web Component / Custom Element"
+                   middle={[
+                     'with complex prop passing and easy event binding',
+                     'for React'
+                   ]}
+                   last="thanks to Stencil"
+                   onNameClicked={e => alert(e.detail)}/>
+    </>
   );
 };
 
