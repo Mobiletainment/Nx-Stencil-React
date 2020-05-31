@@ -1,8 +1,8 @@
-# Yourcompany
+# How to use Stencil Web Components in React within a Nx Monorepo
+
+The idea behind this setup is that Stencil compiles down to standards-compliant Web Components / Custom Elements, but at the same time offers framework integrations for popular libraries such as React, all while having generated React wrappers and typings  for efficient use with TypeScript and TSX ❤.
 
 This project was generated using [Nx](https://nx.dev).
-
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
