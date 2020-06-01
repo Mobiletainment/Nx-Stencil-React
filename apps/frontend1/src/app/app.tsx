@@ -1,5 +1,6 @@
 import React from 'react';
-// this import uses path mapping under the hood to retrieve the generated source code
+
+// this import uses path mapping under the hood and utilizes Stencil's React bindings
 import { MyComponent } from 'ui-components-react';
 
 export const App = () => {

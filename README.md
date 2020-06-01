@@ -1,6 +1,8 @@
 # How to use Stencil Web Components in React within a Nx Monorepo
 
-The idea behind this setup is that Stencil compiles down to standards-compliant Web Components / Custom Elements, but at the same time offers framework integrations for popular libraries such as React, all while having generated React wrappers and typings  for efficient use with TypeScript and TSX ❤.
+This project generates React wrappers and typings from the Stencil component library for efficient use with TypeScript and TSX in React. ❤️
+
+The benefits of using a Stencil component is that it compiles down to standards-compliant Web Components / Custom Elements, while at the same time Stencil offers framework integrations for popular libraries such as React, Angular or Vue, which makes them easy to use across frameworks.
 
 This project was generated using [Nx](https://nx.dev).
 
