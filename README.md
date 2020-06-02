@@ -2,7 +2,9 @@
 
 This project generates React wrappers and typings from the Stencil component library for efficient use with TypeScript and TSX in React. ❤️
 
-The benefits of using a Stencil component is that it compiles down to standards-compliant Web Components / Custom Elements, while at the same time Stencil offers framework integrations for popular libraries such as React, Angular or Vue, which makes them easy to use across frameworks.
+The benefit of using a Stencil component library is that Stencil compiles down to standards-compliant Web Components / Custom Elements, while at the same time it offers framework integrations for popular libraries such as React, Angular or Vue, which makes them easy to use across frameworks.
+
+![Stencil Web Components in React with TSX support](docs/Stencil-Web-Components-in-React.png "Stencil Web Components in React with TSX support")
 
 This project was generated using [Nx](https://nx.dev).
 
