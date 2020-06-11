@@ -9,7 +9,7 @@ export const config: Config = {
   outputTargets: [
     reactOutputTarget({
       componentCorePackage: 'ui-components',
-      proxiesFile: '../../generated/ui-components-react/src/components.ts'
+      proxiesFile: './dist/ui-components-generated-react/src/components.ts'
     }),
     {
       type: 'dist',

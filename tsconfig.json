@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "ui-components": ["libs/ui-components"],
-      "ui-components/loader": ["libs/ui-components/dist/loader/index.cjs.js"],
-      "ui-components-react": ["generated/ui-components-react/src/components.ts"]
+      "ui-components": ["dist/libs/ui-components"],
+      "ui-components/loader": ["dist/libs/ui-components/dist/loader/index.cjs.js"],
+      "ui-components-react": ["dist/libs/ui-components/dist/ui-components-generated-react/src/components.ts"]
     },
     "rootDir": ".",
     "sourceMap": true,

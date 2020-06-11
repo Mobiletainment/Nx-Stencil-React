@@ -118,19 +118,22 @@
         "build": {
           "builder": "@nxext/stencil:build",
           "options": {
-            "projectType": "library"
+            "projectType": "library",
+            "configPath": "libs/ui-components/stencil.config.ts"
           }
         },
         "test": {
           "builder": "@nxext/stencil:test",
           "options": {
-            "projectType": "library"
+            "projectType": "library",
+            "configPath": "libs/ui-components/stencil.config.ts"
           }
         },
         "e2e": {
           "builder": "@nxext/stencil:e2e",
           "options": {
-            "projectType": "library"
+            "projectType": "library",
+            "configPath": "libs/ui-components/stencil.config.ts"
           }
         }
       }
