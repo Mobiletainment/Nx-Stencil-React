@@ -10,6 +10,12 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
+## Updating the Stencil plugin
+The Stencil plugin adds a lot of capabilities for efficiently working with Stencil, like component generation or support for Storybook. In order to benefit from new capabilities, run the provided Stencil migration which takes care of bringing you up-to-date:
+`nx migrate @nxext/stencil`
+  
+After the migration, run `yarn install` to install the updated packages.
+
 ## Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.

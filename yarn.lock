@@ -1324,7 +1324,7 @@
     yargs "^11.0.0"
     yargs-parser "10.0.0"
 
-"@nrwl/cypress@9.3.0", "@nrwl/cypress@^9.3.0":
+"@nrwl/cypress@9.3.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-9.3.0.tgz#4cc82358e18b0f93d8551f20d8e0e2d1665f6270"
   integrity sha512-yoYpDZVM+YhIiwS18sjgcbmAKczQRo9JBFpjRSRu6YEqKjzCEt28Zjo/k14xy2qytXkmhEvn8hbM7vE9OC0cXA==
@@ -1507,12 +1507,11 @@
     yargs "^11.0.0"
     yargs-parser "10.0.0"
 
-"@nxext/stencil@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@nxext/stencil/-/stencil-0.0.14.tgz#f0cff73b50245585a8e44479a76a727fd1568107"
-  integrity sha512-uv9RqqefXKgrzwtg5A4WivkXybEHuIBO6Cwn9WwFKHMeCRCGnotzrV7IFDAEcyAnu0iEULCl1TD5l92istYpLA==
+"@nxext/stencil@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nxext/stencil/-/stencil-0.1.0.tgz#4b8126abad4f97f2b6879371ffb1be24015b6cda"
+  integrity sha512-Ge2XWcZryn9oGBp6SqjDXI1+r6vTbwkndNfHprXKqP+LaWtxm+33NoblI5ml9b1iinoxvBExYYy7AN6uzPaF7A==
   dependencies:
-    "@nrwl/cypress" "^9.3.0"
     "@nrwl/jest" "^9.3.0"
     "@nrwl/workspace" "^9.3.0"
 

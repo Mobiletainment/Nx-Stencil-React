@@ -1,0 +1,11 @@
+{
+  "migrations": [
+    {
+      "version": "0.1.0",
+      "description": "update-0-1-0",
+      "factory": "./src/migrations/update-0-1-0/update-0-1-0",
+      "package": "@nxext/stencil",
+      "name": "update-0-1-0"
+    }
+  ]
+}
