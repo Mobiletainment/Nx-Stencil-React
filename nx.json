@@ -25,7 +25,10 @@
   },
   "projects": {
     "frontend1": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": [
+        "ui-components"
+      ]
     },
     "frontend1-e2e": {
       "tags": [],
