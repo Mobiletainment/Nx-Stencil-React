@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "ui-components": ["dist/libs/ui-components"],
-      "ui-components/loader": ["dist/libs/ui-components/loader"],
+      "ui-components/loader": ["dist/libs/ui-components/loader/index.cjs.js"],
       "ui-components-react": ["dist/libs/generated/ui-components-react/src/components.ts"]
     },
     "rootDir": ".",
