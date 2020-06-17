@@ -61,7 +61,7 @@ jobs:
             ${{ runner.os }}-${{ matrix.node-version }}-workspace-
       - name: Run On Master
         if: github.event_name == 'push'
-        run: yarn affected:build --base=$GITHUB_REF~1 --head=$GITHUB_SHA --parallel
+        run: yarn nx build --prod --parallel
       - name: Run on PR
         if: github.event_name == 'pull_request'
         run: yarn build ui-components --base=origin/master --head=HEAD --parallel

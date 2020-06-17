@@ -9,17 +9,19 @@ export const config: Config = {
   outputTargets: [
     reactOutputTarget({
       componentCorePackage: 'ui-components',
-      proxiesFile: './dist/ui-components-generated-react/src/components.ts'
+      proxiesFile: '../generated/ui-components-react/src/components.ts',
     }),
     {
       type: 'dist',
-      esmLoaderPath: './loader'
+      esmLoaderPath: '../loader',
+      dir: '../../dist/libs/ui-components/dist',
     },
     {
       type: 'docs-readme',
     },
     {
       type: 'www',
+      dir: '../../dist/libs/ui-components/www',
       serviceWorker: null, // disable service workers
     },
   ],

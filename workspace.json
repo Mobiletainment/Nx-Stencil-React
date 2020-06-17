@@ -63,12 +63,11 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "eslint",
-            "config": "apps/frontend1/.eslintrc",
             "tsConfig": [
               "apps/frontend1/tsconfig.app.json",
               "apps/frontend1/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/frontend1/**"]
+            "exclude": ["**/node_modules/**", "!apps/frontend1/**/*"]
           }
         },
         "test": {
@@ -103,9 +102,8 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "eslint",
-            "config": "apps/frontend1-e2e/.eslintrc",
             "tsConfig": ["apps/frontend1-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/frontend1-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/frontend1-e2e/**/*"]
           }
         }
       }
@@ -131,6 +129,13 @@
         },
         "e2e": {
           "builder": "@nxext/stencil:e2e",
+          "options": {
+            "projectType": "library",
+            "configPath": "libs/ui-components/stencil.config.ts"
+          }
+        },
+        "serve": {
+          "builder": "@nxext/stencil:serve",
           "options": {
             "projectType": "library",
             "configPath": "libs/ui-components/stencil.config.ts"

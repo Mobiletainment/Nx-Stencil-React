@@ -186,6 +186,7 @@
     "react/react-in-jsx-scope": "error",
     "react/require-render-return": "error",
     "react/style-prop-object": "warn",
+    "react/jsx-no-useless-fragment": "warn",
     "jsx-a11y/accessible-emoji": "warn",
     "jsx-a11y/alt-text": "warn",
     "jsx-a11y/anchor-has-content": "warn",

@@ -7,7 +7,7 @@ export const App = () => {
 
   return (
     <>
-      <h1>Welcome to React with full Stencil component integration!</h1>,
+      <h1>Welcome to React with full Stencil component integration!</h1>
       <MyComponent first="a Web Component / Custom Element"
                    middle={[
                      'with complex prop passing and easy event binding',
