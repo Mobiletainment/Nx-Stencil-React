@@ -33,14 +33,14 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         if: github.event_name == 'push'
-        run: yarn nx build --prod --parallel
+        run: yarn nx build --prod --with-Deps
       - name: Run Build on PR
         if: github.event_name == 'pull_request'
-        run: yarn build ui-components --base=origin/master --head=HEAD --parallel
+        run: yarn build ui-components --base=origin/master --head=HEAD
       - name: Test
         if: github.event_name == 'push'
         run: yarn test
       - name: Run Test on PR
         if: github.event_name == 'pull_request'
-        run: yarn test ui-components --base=origin/master --head=HEAD --parallel
+        run: yarn test ui-components --base=origin/master --head=HEAD
 
