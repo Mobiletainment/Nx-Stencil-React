@@ -12,8 +12,5 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/ui-components/ui-components.js",
-  "files": [
-    "dist/"
-  ]
+  "unpkg": "dist/ui-components/ui-components.js"
 }
