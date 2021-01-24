@@ -135,10 +135,12 @@
           }
         },
         "serve": {
-          "builder": "@nxext/stencil:serve",
+          "builder": "@nxext/stencil:build",
           "options": {
             "projectType": "library",
-            "configPath": "libs/ui-components/stencil.config.ts"
+            "configPath": "libs/ui-components/stencil.config.ts",
+            "watch": true,
+            "serve": true
           }
         }
       }
