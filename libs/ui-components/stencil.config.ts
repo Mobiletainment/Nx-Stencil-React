@@ -10,6 +10,8 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: 'ui-components',
       proxiesFile: '../generated/ui-components-react/src/components.ts',
+      includeDefineCustomElements: true,
+      includePolyfills: false
     }),
     {
       type: 'dist',

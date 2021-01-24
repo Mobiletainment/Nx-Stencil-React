@@ -2678,22 +2678,20 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@stencil/core@1.16.4":
-  version "1.16.4"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.16.4.tgz#132fcee3bc6c6c0db5af799c8279b42b559877d9"
-  integrity sha512-RN1xoGyzNCXAAzN8HHDDoGEbGrms1YpEnfp86kd37ZHOOwX500GwxjsTOpzFcBOfkUoiuBjKVnONTqWO04H8/Q==
-  dependencies:
-    typescript "3.9.7"
+"@stencil/core@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.3.0.tgz#9190df3a0064537730be1546545e13531d701da8"
+  integrity sha512-VZ/Ox0E1kngcmHbJhHUufuLELi+xG3of3LuRI3X2AMWyE82JUVYlOEsQci/YBZWpfc9BS9I36R88prBew22oew==
 
-"@stencil/react-output-target@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@stencil/react-output-target/-/react-output-target-0.0.7.tgz#47e0b52336bdebd8e74680dd4b49c80b557c173a"
-  integrity sha512-Z3w+Mj3cyNutltrkEs1FMW0ABWTWQXJn1nxmFmvDmMknAtAgKl0qrazdVS5+uQ0XneiCp5lfYgqMcKfP5CM9Yw==
+"@stencil/react-output-target@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@stencil/react-output-target/-/react-output-target-0.0.9.tgz#b225611c5743f0285c37d92bb47d9369ba462c54"
+  integrity sha512-t2sSkm/VGftBqewK47eZonaHIXW7CYWlsDy6Ln4jqNVpr93CuPWkg7rsnPiZrJrU1NBuTgA0hC2xoRcAJVm7Sw==
 
-"@stencil/sass@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@stencil/sass/-/sass-1.3.1.tgz#d49f09b4e720eafea13a77e0940cc86039370644"
-  integrity sha512-5qsEyhLGTywpG4zlWv6eBhhj/z2Z37nbUGa87Ak0KqfsEiclJCYRA/AMM9FiN1jHfBvr968G4zE8rNlYmiPLsQ==
+"@stencil/sass@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@stencil/sass/-/sass-1.4.1.tgz#ef5a1dd1b56c024ed08e80475e8a6f8d1c25bb10"
+  integrity sha512-aFKoqtxZ/8BRbvNFiWRycGiqvMI22Ifn5qsKfq0U23j43XD81jT6d7K0WQd55ejNpoSpdxJcbOuFgQy3mXizfA==
 
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
@@ -13101,11 +13099,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@3.9.7:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 typescript@4.0.5:
   version "4.0.5"
