@@ -10,6 +10,7 @@
         "build": {
           "builder": "@nrwl/web:build",
           "options": {
+            "withDeps": true,
             "outputPath": "dist/apps/frontend1",
             "index": "apps/frontend1/src/index.html",
             "main": "apps/frontend1/src/main.tsx",
@@ -54,9 +55,11 @@
           ]
         },
         "serve": {
-          "builder": "@nrwl/web:dev-server",
+          "builder": "@nrwl/web:file-server",
           "options": {
-            "buildTarget": "frontend1:build"
+            "buildTarget": "frontend1:build",
+            "withDeps": true,
+            "parallel": true
           },
           "configurations": {
             "production": {
