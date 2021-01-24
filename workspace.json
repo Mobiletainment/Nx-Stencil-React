@@ -19,7 +19,9 @@
               "apps/frontend1/src/favicon.ico",
               "apps/frontend1/src/assets"
             ],
-            "styles": ["apps/frontend1/src/styles.scss"],
+            "styles": [
+              "apps/frontend1/src/styles.scss"
+            ],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -46,7 +48,10 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@nrwl/web:dev-server",
@@ -60,23 +65,30 @@
           }
         },
         "lint": {
-          "builder": "@nrwl/linter:lint",
+          "builder": "@nrwl/linter:eslint",
           "options": {
-            "linter": "eslint",
-            "tsConfig": [
-              "apps/frontend1/tsconfig.app.json",
-              "apps/frontend1/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!apps/frontend1/**/*"]
+            "lintFilePatterns": [
+              "apps/frontend1/**/*.js",
+              "apps/frontend1/**/*.jsx",
+              "apps/frontend1/**/*.ts",
+              "apps/frontend1/**/*.tsx",
+              "apps/frontend1/**/*.spec.ts",
+              "apps/frontend1/**/*.spec.tsx",
+              "apps/frontend1/**/*.spec.js",
+              "apps/frontend1/**/*.spec.jsx",
+              "apps/frontend1/**/*.d.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/frontend1/jest.config.js",
-            "tsConfig": "apps/frontend1/tsconfig.spec.json",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/apps/frontend1"
+          ]
         }
       }
     },
@@ -99,11 +111,12 @@
           }
         },
         "lint": {
-          "builder": "@nrwl/linter:lint",
+          "builder": "@nrwl/linter:eslint",
           "options": {
-            "linter": "eslint",
-            "tsConfig": ["apps/frontend1-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/frontend1-e2e/**/*"]
+            "lintFilePatterns": [
+              "apps/frontend1-e2e/src/**/*.ts",
+              "apps/frontend1-e2e/src/**/*.js"
+            ]
           }
         }
       }
